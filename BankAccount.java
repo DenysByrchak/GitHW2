@@ -13,11 +13,11 @@ public class BankAccount {
     }
 
     public boolean withdraw(double amount) {
-        if (balance < amount + 50) {
+        if (balance < amount + 2 + 50) {
             return false
         }
 
-        balance -= amount;
+        balance -= amount + 2;
 
         return true;
     }
